@@ -1,20 +1,27 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Login, Register } from "components";
-import AllocateVacancy from "components/pages/allocate_vacancy";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { Login, Register, RegisterPlate, AllocateVacancy } from "components";
+
+const loggedIn = false;
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/login">
+        <Route exact path="/">
+          {loggedIn ? <Redirect to="/login" /> : <Redirect to="/alocar-vaga" />}
+        </Route>
+        <Route path="/login" exact>
           <Login />
         </Route>
-        <Route path="/register">
+        <Route path="/register" exact>
           <Register />
         </Route>
-        <Route path="/alocar-vaga">
+        <Route path="/alocar-vaga" exact>
           <AllocateVacancy />
+        </Route>
+        <Route path="/registrar-placa" exact>
+          <RegisterPlate />
         </Route>
       </Switch>
     </BrowserRouter>

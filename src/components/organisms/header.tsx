@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import UserImage from "images/userImage.png";
 import "styles/organisms/header.css";
 
-const AllocateVacancyHeader: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="header-left-content">
-        <div className="header-button">
-          <Link to="alocar-vaga">Alocar vaga</Link>
-        </div>
+        <Link className="header-button" to="alocar-vaga">
+          <div>Alocar vaga</div>
+        </Link>
 
-        <div className="header-button">
-          <Link to="registrar-placa">Registrar placa</Link>
-        </div>
+        <Link className="header-button" to="registrar-placa">
+          <div>Registrar placa</div>
+        </Link>
       </div>
       <div className="header-right-content">
         <img className="perfil-image" src={UserImage} alt="userImage" />
@@ -26,4 +26,4 @@ const AllocateVacancyHeader: React.FC = () => {
   );
 };
 
-export default AllocateVacancyHeader;
+export default Header;
