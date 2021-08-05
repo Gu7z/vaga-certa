@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Login } from "components";
+import { Login, Register } from "components";
 
 const Router: React.FC = () => {
   return (
@@ -8,6 +8,10 @@ const Router: React.FC = () => {
       <Switch>
         <Route path="/login">
           <Login />
+        </Route>
+
+        <Route path="/register">
+          <Register />
         </Route>
       </Switch>
     </BrowserRouter>
