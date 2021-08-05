@@ -1,6 +1,7 @@
 import React from "react";
 import "styles/organisms/login_paper.css";
 import InputMask from "react-input-mask";
+import { Link } from "react-router-dom";
 
 const LoginPaper: React.FC = () => {
   return (
@@ -14,7 +15,8 @@ const LoginPaper: React.FC = () => {
           <label htmlFor="">Senha</label>
           <input type="text" placeholder="********" />
         </div>
-        <div>
+        <div className="login-buttons">
+          <Link to="/register">Não tem uma conta?</Link>
           <div className="btn btn-blue">Login</div>
         </div>
       </form>

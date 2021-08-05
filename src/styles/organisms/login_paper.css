@@ -1,22 +1,35 @@
 .paper {
   background-color: white;
-  height: 320px;
+  height: 340px;
   width: 400px;
+  max-width: 100%;
   border-radius: 10px;
   display: flex;
   justify-content: center;
+}
+
+.paper form {
+  max-width: 100%;
 }
 
 .login-cpf {
   display: flex;
   flex-direction: column;
   margin: 16px 64px;
+  max-width: 100%;
 }
 
 .login-password {
   display: flex;
   flex-direction: column;
   margin: 16px 64px;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-left: 25%;
 }
 
 label {
@@ -71,4 +84,16 @@ div.btn.btn-blue:hover {
 div.btn.btn-blue:active {
   background-color: #021f59;
   border-color: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 400px) {
+  label {
+    font-size: 16px;
+  }
+  input {
+    font-size: 20px;
+  }
+  div.btn {
+    font-size: 20px;
+  }
 }
