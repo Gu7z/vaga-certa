@@ -17,7 +17,9 @@ const LoginPaper: React.FC = () => {
         </div>
         <div className="login-buttons">
           <Link to="/register">Não tem uma conta?</Link>
-          <div className="btn btn-blue">Login</div>
+          <Link to="/alocar-vaga">
+            <div className="btn btn-blue">Login</div>
+          </Link>
         </div>
       </form>
     </div>
