@@ -1,0 +1,74 @@
+.paper {
+  background-color: white;
+  height: 320px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-cpf {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 64px;
+}
+
+.login-password {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 64px;
+}
+
+label {
+  align-self: flex-start;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  font-size: 20px;
+  color: #545454;
+}
+
+input {
+  height: 56px;
+  font-size: 24px;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid #d3d3d3;
+  padding: 0px 16px;
+  color: #545454;
+}
+
+input:hover {
+  border: 2px solid #949494;
+}
+
+div.btn {
+  margin-top: 24px;
+  display: inline-block;
+  color: #545454;
+  background-color: #eee;
+  font-size: 24px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(20, 15, 15, 0.3);
+  border-bottom-width: 3px;
+  cursor: pointer;
+}
+
+div.btn.btn-blue {
+  background-color: #034c8c;
+  border-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+div.btn.btn-blue:hover {
+  background-color: #023e73;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+div.btn.btn-blue:active {
+  background-color: #021f59;
+  border-color: rgba(0, 0, 0, 0.9);
+}
