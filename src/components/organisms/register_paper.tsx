@@ -5,7 +5,7 @@ import "styles/organisms/register_paper.css";
 
 const RegisterPaper: React.FC = () => {
   return (
-    <div className="paper">
+    <div className="register-paper">
       <form>
         <div className="register-cpf">
           <label htmlFor="">CPF</label>
