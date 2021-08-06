@@ -54,7 +54,7 @@ input:hover {
   border: 2px solid #949494;
 }
 
-div.btn {
+.login-buttons .btn {
   margin-top: 24px;
   display: inline-block;
   color: #545454;
@@ -69,19 +69,19 @@ div.btn {
   cursor: pointer;
 }
 
-div.btn.btn-blue {
+.login-buttons .btn-blue {
   background-color: #034c8c;
   border-color: rgba(0, 0, 0, 0.3);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
-div.btn.btn-blue:hover {
+.login-buttons .btn-blue:hover {
   background-color: #023e73;
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-div.btn.btn-blue:active {
+.login-buttons .btn-blue:active {
   background-color: #021f59;
   border-color: rgba(0, 0, 0, 0.9);
 }
