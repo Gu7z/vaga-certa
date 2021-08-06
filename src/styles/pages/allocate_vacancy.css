@@ -53,3 +53,7 @@
   padding: 0px 16px;
   color: #545454;
 }
+
+.allocate_vacancy p {
+  font-size: 24px;
+}
