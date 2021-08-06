@@ -9,12 +9,18 @@ const RegisterPlate: React.FC = () => {
 
   const handleNewPlate = () => {
     const newPlates = [...myPlates, newPlate];
+    if (!newPlate || newPlate.length < 6) return;
 
     setMyPlates(newPlates);
   };
 
+  const parseMaskChar = (str: string) =>
+    str.replaceAll("-", "").replaceAll("_", "").toUpperCase();
+
   const handleOnchange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setNewPlate(event.target.value.toUpperCase());
+    const parsedString = parseMaskChar(event.target.value);
+
+    setNewPlate(parsedString);
   };
 
   return (
