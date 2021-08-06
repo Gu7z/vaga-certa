@@ -1,9 +1,11 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #2372d9;
-  height: 64px;
+  min-height: 64px;
+  height: max-content;
   color: white;
 }
 
@@ -22,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 64px;
   height: 100%;
   padding: 0px 16px;
   cursor: pointer;
@@ -36,7 +39,6 @@
   display: flex;
   justify-self: flex-end;
   align-items: center;
-  margin-right: 32px;
 }
 
 .perfil-image {

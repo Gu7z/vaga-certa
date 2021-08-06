@@ -3,3 +3,33 @@
   padding: 0;
   height: 100%;
 }
+
+.add-plate button {
+  display: inline-block;
+  color: #54544c;
+  background-color: #eee;
+  font-size: 24px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(20, 15, 15, 0.3);
+  border-bottom-width: 3px;
+  cursor: pointer;
+}
+
+.add-plate button:hover {
+  background-color: #d4d4d4;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-plate button:active {
+  background-color: #adadad;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.my-plates {
+  margin-top: 48px;
+  width: 50%;
+  margin-left: 25%;
+}

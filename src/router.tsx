@@ -9,7 +9,7 @@ const Router: React.FC = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          {loggedIn ? <Redirect to="/login" /> : <Redirect to="/alocar-vaga" />}
+          {loggedIn ? <Redirect to="/alocar-vaga" /> : <Redirect to="/login" />}
         </Route>
         <Route path="/login" exact>
           <Login />
