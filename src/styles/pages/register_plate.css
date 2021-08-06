@@ -33,3 +33,21 @@
   width: 50%;
   margin-left: 25%;
 }
+
+.add-plate label {
+  margin-top: 24px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #545454;
+}
+
+.add-plate input {
+  height: 56px;
+  font-size: 24px;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid #d3d3d3;
+  padding: 0px 16px;
+  color: #545454;
+}

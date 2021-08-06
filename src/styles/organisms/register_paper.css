@@ -1,4 +1,4 @@
-.paper {
+.register-paper {
   background-color: white;
   height: 340px;
   width: 400px;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.paper form {
+.register-paper form {
   max-width: 100%;
 }
 
@@ -32,7 +32,7 @@
   margin-left: 25%;
 }
 
-label {
+.register-paper label {
   align-self: flex-start;
   margin-left: 8px;
   margin-bottom: 4px;
@@ -40,7 +40,7 @@ label {
   color: #545454;
 }
 
-input {
+.register-paper input {
   height: 56px;
   font-size: 24px;
   border-radius: 7px;
@@ -87,13 +87,13 @@ input:hover {
 }
 
 @media (max-width: 400px) {
-  label {
+  .register-paper label {
     font-size: 16px;
   }
-  input {
+  .register-paper input {
     font-size: 20px;
   }
-  div.btn {
+  register-paper .btn {
     font-size: 20px;
   }
 }

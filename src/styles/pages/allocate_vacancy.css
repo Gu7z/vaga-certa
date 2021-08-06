@@ -3,3 +3,53 @@
   padding: 0;
   height: 100%;
 }
+
+.check-vacancy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-vacancy .btn {
+  margin-top: 16px;
+  display: inline-block;
+  color: #54544c;
+  background-color: #eee;
+  font-size: 24px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgba(20, 15, 15, 0.3);
+  border-bottom-width: 3px;
+  cursor: pointer;
+}
+
+.check-vacancy .btn:hover {
+  background-color: #d4d4d4;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.check-vacancy .btn:active {
+  background-color: #adadad;
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.check-vacancy label {
+  margin-top: 24px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #545454;
+}
+
+.check-vacancy input {
+  height: 56px;
+  font-size: 24px;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid #d3d3d3;
+  padding: 0px 16px;
+  color: #545454;
+}

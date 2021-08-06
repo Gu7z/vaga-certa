@@ -32,7 +32,7 @@
   margin-left: 25%;
 }
 
-label {
+.paper label {
   align-self: flex-start;
   margin-left: 8px;
   margin-bottom: 4px;
@@ -40,7 +40,7 @@ label {
   color: #545454;
 }
 
-input {
+.paper input {
   height: 56px;
   font-size: 24px;
   border-radius: 7px;
@@ -87,13 +87,13 @@ input:hover {
 }
 
 @media (max-width: 400px) {
-  label {
+  .paper label {
     font-size: 16px;
   }
-  input {
+  .paper input {
     font-size: 20px;
   }
-  div.btn {
+  .login-buttons .btn {
     font-size: 20px;
   }
 }
